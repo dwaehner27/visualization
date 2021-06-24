@@ -86,29 +86,32 @@ var xLabel = []
             datasets: [{
                 label: 'Private Room',
                 data: pPoints,
-                backgroundColor: "transparent",
+                backgroundColor: "red",
                 borderColor: "transparent",
                 borderWidth: 1,
                 pointRadius: 5,
-                pointBackgroundColor: "red"
+                pointBackgroundColor: "red",
+                fill: false
             },
             {
                 label: 'Entire home/apt',
                 data: ePoints,
-                backgroundColor: "transparent",
+                backgroundColor: "orange",
                 borderColor: "transparent",
                 borderWidth: 1,
                 pointRadius: 5,
-                pointBackgroundColor: "orange"
+                pointBackgroundColor: "orange",
+                fill: false
             },
             {
                 label: 'Shared Room',
                 data: sPoints,
-                backgroundColor: "transparent",
+                backgroundColor: "blue",
                 borderColor: "transparent",
                 borderWidth: 1,
                 pointRadius: 5,
-                pointBackgroundColor: "blue"
+                pointBackgroundColor: "blue",
+                fill: false
             }]
 
         },
@@ -124,6 +127,9 @@ var xLabel = []
                     labelString: "yaxis data"
 
                 }]
+            },
+            legend: {
+                position: "right"
             }
         }
 
