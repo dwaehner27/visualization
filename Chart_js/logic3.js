@@ -1,7 +1,4 @@
 
-
-
-
 [{stateData: chicagoData,el:"chicagoChart"}, {stateData: nycData,el: "nycChart"}].forEach(({stateData, el}) => {
 
 var sData = []
