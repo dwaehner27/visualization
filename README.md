@@ -21,3 +21,7 @@ The vizualization will contain three different layers on a map view as listed be
 ![grid](Images/grid.png)
 
 ![pins](Images/pins.png)
+
+## How to Run Code
+
+Clone this repository, add your map API key to the config.js file, and then open the index.html file through your local server. You should be able to navigate through the different pages once on the main page.
