@@ -82,7 +82,7 @@ var myMap = L.map("map", {
       },
       
     });
-    layer.bindPopup("<h1>" + feature.properties.name + "</h1> <hr> <h2>" + feature.properties.Price + "</h1> <hr> <h2>" + feature.properties.Number + "</h2>");
+    layer.bindPopup("<h1>" + feature.properties.name + "</h1> <hr> <h2>" +"<dt>Price</dt>" + feature.properties.Price + "</h1> <hr> <h2>" +"<dt>Total Rentals</dt>" + feature.properties.Number + "</h2>");
   
       }
     }).addTo(myMap);
