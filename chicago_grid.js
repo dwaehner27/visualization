@@ -81,7 +81,7 @@ onEachFeature: function(feature, layer) {
     },
     
   });
-  layer.bindPopup("<h1>" "+ feature.properties.community + "</h1> <hr> <h2>" + "Price "+ feature.properties.Price + "</h1> <hr> <h2>" + "Total AirbnB's "+feature.properties.Number + "</h2>");
+  layer.bindPopup("<h1>" + feature.properties.community + "</h1> <hr> <h2>"+"<dt>Price</dt>" + feature.properties.Price + "</h1> <hr> <h2>" + "<dt>Total Rentals</dt>" +feature.properties.Number + "</h2>");
 
     }
   }).addTo(myMap);
