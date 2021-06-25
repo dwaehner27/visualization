@@ -1,4 +1,4 @@
-var myMap = L.map("map", {
+var myMap = L.map("map2", {
   center: [41.8781, -87.6298],
   zoom: 10
 });
@@ -81,7 +81,7 @@ onEachFeature: function(feature, layer) {
     },
     
   });
-  layer.bindPopup("<h1>" + feature.properties.community + "</h1> <hr> <h2>"+"<dt>Price</dt>" + feature.properties.Price + "</h1> <hr> <h2>" + "<dt>Total Rentals</dt>" +feature.properties.Number + "</h2>");
+  layer.bindPopup("<h1>" + feature.properties.community + "</h1> <hr> <h2>"+"<dt>Avg. Price</dt>" + "$" + feature.properties.Price + "</h1> <hr> <h2>" + "<dt>Total Rentals</dt>" +feature.properties.Number + "</h2>");
 
     }
   }).addTo(myMap);

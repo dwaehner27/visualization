@@ -26,12 +26,12 @@
     for(var i=0; i < data.length;i++) {
         var clusterplaces = data[i];
         // console.log(clusterplaces);
-        var lists = "<dl><dt>Name:</dt>"
-        + "<dd>" + clusterplaces.name + "</dd>"
-        + "<dt>Price</dt>"
-        + "<dd>" + "$" + clusterplaces.price + "</dd>"
-        + "<dt>Minimum Nights</dt>"
-        +"<dd>"+ clusterplaces.minimum_nights + "</dd>"
+        var lists = "<dl><h2>Name:</h2>"
+        + "<h3>" + clusterplaces.name + "</h3>"
+        + "<h2> Price: </h2>"
+        + "<h3>" + "$" + clusterplaces.price + "</h3>"
+        + "<h2>Minimum Nights:</h2>"
+        +"<h3>"+ clusterplaces.minimum_nights + "</h3>"
         var clustermarker = L.marker([clusterplaces.latitude,clusterplaces.longitude])
         .bindPopup(lists);
 
