@@ -26,12 +26,12 @@ d3.csv("Resources/seattle_pins.csv").then(function(data) {
     for(var i=0; i < data.length;i++) {
         var clusterplaces = data[i];
         // console.log(clusterplaces);
-        var lists = "<dl><dt>Name:</dt>"
-        + "<dd>" + clusterplaces.name + "</dd>"
-        + "<dt>Price</dt>"
-        + "<dd>" + "$" + clusterplaces.price + "</dd>"
-        + "<dt>Minimum Nights</dt>"
-        +"<dd>"+ clusterplaces.minimum_nights + "</dd>"
+        var lists = "<h3> Name: </h3>"
+        + "<h5>" + clusterplaces.name + "</h5>"
+        + "<h3> Price: </h3>"
+        + "<h5>" + "$" + clusterplaces.price + "</h5>"
+        + "<h3> Minimum Nights: </h3>"
+        + "<h5>"+ clusterplaces.minimum_nights + "</h5>"
         var clustermarker = L.marker([clusterplaces.latitude,clusterplaces.longitude])
         .bindPopup(lists);
 

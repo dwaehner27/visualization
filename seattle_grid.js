@@ -1,6 +1,6 @@
-var myMap = L.map("map", {
+var myMap = L.map("map2", {
     center: [47.6062, -122.3321],
-    zoom: 10
+    zoom: 10.5
   });
   
   L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
@@ -82,7 +82,7 @@ var myMap = L.map("map", {
       },
       
     });
-    layer.bindPopup("<h1>" + feature.properties.name + "</h1> <hr> <h2>" +"<dt>Price</dt>" + feature.properties.Price + "</h1> <hr> <h2>" +"<dt>Total Rentals</dt>" + feature.properties.Number + "</h2>");
+    layer.bindPopup("<h1>" + feature.properties.name + "</h1> <hr> <h2>" +"<dt>Avg. Price</dt>" + "$" + feature.properties.Price + "</h1> <hr> <h2>" +"<dt>Total Rentals</dt>" + feature.properties.Number + "</h2>");
   
       }
     }).addTo(myMap);
