@@ -72,11 +72,11 @@ var xLabel = []
         sPoints.push(sData[item])
 
     })
-    console.log(pPoints);
+    // console.log(pPoints);
 
 
-    console.log(ePoints);
-    console.log(sPoints);
+    // console.log(ePoints);
+    // console.log(sPoints);
 
     var ctx = document.getElementById(el).getContext('2d');
     var barChart = new Chart(ctx, {
